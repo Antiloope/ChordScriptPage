@@ -1,3 +1,82 @@
-.example-spacer {
-  flex: 1 1 auto;
+@import '~@angular/material/theming';
+
+mat-toolbar {
+  background-color: var(--main-bg-color);
+  border-bottom: solid 2px var(--darkest-color);
+}
+
+#sidenav {
+  padding: 10px;
+}
+
+#header-logo {
+  padding: 8px;
+  margin: 5px 5px;
+}
+
+.side-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  vertical-align: middle;
+  color: var(--darkest-color);
+}
+
+.side-button:focus {
+  background-color: #c674d970;
+}
+
+.side-button:hover {
+  background-color: #c674d970;
+}
+
+.header-button {
+  color: var(--darkest-color);
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: larger;
+}
+
+.header-button:hover {
+  background-color: #c674d970;
+}
+
+#header-logo-button:hover {
+  background-color: #c674d970;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+  background-color: var(--main-bg-color);
+}
+
+.sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+@media (max-width: 600px) {
+  .header-button {
+    padding: 10px;
+    min-width: 28px;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
 }

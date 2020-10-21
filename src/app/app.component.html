@@ -1,13 +1,63 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+  <mat-toolbar>
+    <button mat-icon-button
+            id="menu-button-icon"
+            (click)="snav.toggle()"
+            [style.display]="mobileQuery.matches ? 'block' : 'none'">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <a mat-button id="header-logo-button" routerLink="/" (click)="snav.close()">
+      <img id="header-logo"
+           [src]="mobileQuery.matches ? 'assets/logo.png' : 'assets/logo.svg'"
+           [height]="!mobileQuery.matches ? 50 : 46"
+           alt="ChordScript logo">
+    </a>
+    <mat-nav-list [style.display]="!mobileQuery.matches ? 'block' : 'none'">
+      <a mat-button *ngFor="let item of options"
+         routerLink="{{item.route}}" class="header-button">
+        {{item.name}} </a>
+
+    </mat-nav-list>
+    <span style="flex: 1 1 auto;"></span>
+    <h2 [style]="mobileQuery.matches ? 'display:none;' : ''" >{{contribute}}</h2>
+    <a mat-button href="https://github.com/Antiloope/ChordScript"
+       (click)="snav.close()" class="header-button">
+      <img
+           src="assets/github-mark.png"
+           [height]="mobileQuery.matches ? 36 : 40"
+           alt="Github mark icon">
+    </a>
+    <a mat-button class="header-button" [matMenuTriggerFor]="menu"
+       (click)="snav.close()">
+      <img [src]="languageIcon"
+           height="27"
+           alt="Language icon">
+    </a>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item style="padding-top: 8px" (click)="changeLanguage(0)">
+        <img src="assets/en.png"
+             height="25"
+        alt="English language icon">
+      </button>
+      <button mat-menu-item style="padding-top: 8px" (click)="changeLanguage(1)">
+        <img src="assets/es.png"
+             height="25"
+             alt="Spanish language icon">
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+  <mat-sidenav id="sidenav" #snav mode="over"
+               [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    <mat-nav-list>
+      <a mat-button *ngFor="let item of options"
+         routerLink="{{item.route}}" class="side-button"
+         (click)="snav.toggle()">
+        {{item.name}} </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-container class="sidenav-container" (click)="snav.close()">
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-container>
+</div>

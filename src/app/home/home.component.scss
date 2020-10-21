@@ -1,0 +1,62 @@
+@import '~@angular/material/theming';
+
+.main-button {
+  display: flex;
+  vertical-align: middle;
+  margin: 10px 6vmax;
+  justify-content: center;
+  font-size: large;
+  padding: 10px;
+  @include mat-elevation(1, var(--darker-color));
+}
+
+.main-button:hover {
+  background-color: #c674d970;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+}
+
+#title {
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 40px;
+}
+
+#circle-logo {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 20px 40px;
+  margin-left: auto;
+  max-width: 80vw;
+}
+
+#main-buttons {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 20px 40px;
+  max-width: 80vw;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  #content {
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+    grid-template-rows: 1fr 1fr;
+  }
+  #title {
+    text-align: center;
+    font-size: xx-large;
+  }
+  #circle-logo {
+    padding-bottom:0;
+  }
+  #main-buttons {
+    padding-top:0;
+  }
+}

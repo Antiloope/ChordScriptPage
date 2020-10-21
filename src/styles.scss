@@ -7,6 +7,23 @@
   // use our theme with angular-material-theme mixin
   @include angular-material-theme($my-custom-theme);
 }
+:root{
+  --main-bg-color: white;
+  --darkest-color: #5d016f;
+  --darker-color: #720189;
+  --dark-color: #8402a1;
+  --primary-color: #b302d9;
+  --light-color: #d259f3;
+  --lighter-color: #efa8fe;
+  --lightest-color: #f7d5fe;
+  --secondary-color: #7fc241;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::ng-deep{
+  .mat-button-ripple {
+    color: var(--darkest-color);
+  }
+}
