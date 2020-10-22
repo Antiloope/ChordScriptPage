@@ -1,0 +1,24 @@
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(min-content,100px));
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  width: fit-content;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: var(--lighter-color);
+  text-align: center;
+  padding: 40px 1%;
+  color: var(--light-color);
+}
+
+.footer-link {
+  grid-column: span 1;
+  grid-row: span 1;
+  text-decoration: none;
+  color: var(--darkest-color);
+}

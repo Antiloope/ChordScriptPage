@@ -9,7 +9,7 @@
 
     <a mat-button id="header-logo-button" routerLink="/" (click)="snav.close()">
       <img id="header-logo"
-           [src]="mobileQuery.matches ? 'assets/logo.png' : 'assets/logo.svg'"
+           src="assets/logo.png"
            [height]="!mobileQuery.matches ? 50 : 46"
            alt="ChordScript logo">
     </a>
@@ -50,6 +50,8 @@
   <mat-sidenav id="sidenav" #snav mode="over"
                [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
     <mat-nav-list>
+      <a (click)="snav.close()" mat-button>
+      </a>
       <a mat-button *ngFor="let item of options"
          routerLink="{{item.route}}" class="side-button"
          (click)="snav.toggle()">
@@ -58,6 +60,6 @@
   </mat-sidenav>
   <mat-sidenav-container class="sidenav-container" (click)="snav.close()">
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
   </mat-sidenav-container>
+  <app-footer></app-footer>
 </div>

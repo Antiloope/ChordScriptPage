@@ -15,9 +15,16 @@ export class HomeComponent implements OnDestroy {
   welcomeTitle = lang.home_welcome_title[this.currentLanguage];
 
   mainButtons: any[] = [
-    {name: lang.home_btn_what_is[this.currentLanguage], route: '.'},
-    {name: lang.home_btn_get_started[this.currentLanguage], route: '.'},
+    {name: lang.home_btn_what_is[this.currentLanguage], route: '#what-is'},
+    {name: lang.home_btn_get_started[this.currentLanguage], route: '#get-started'},
   ];
+
+  description = {
+    title1: lang.home_title_1[this.currentLanguage],
+    text1: lang.home_text_1[this.currentLanguage],
+    title2: lang.home_title_2[this.currentLanguage],
+    text2: lang.home_text_2[this.currentLanguage],
+  };
 
   // tslint:disable-next-line:variable-name
   private readonly _mobileQueryListener: () => void;

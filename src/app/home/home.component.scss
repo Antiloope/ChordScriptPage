@@ -16,12 +16,62 @@
 
 #content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, minmax(500px, auto));
   grid-template-rows: 1fr;
-  grid-auto-flow: dense;
+  grid-auto-flow: dense
 }
 
-#title {
+.grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  margin-bottom: 25px;
+}
+
+.desc-text {
+  display: flex;
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: x-large;
+  text-align: right;
+  font-weight: 300;
+  line-height: 35px;
+  padding: 5% 10%;
+}
+
+.image-intro {
+  width: 60%;
+  margin-left: 10%;
+  object-fit: fill;
+  grid-column: span 1;
+  grid-row: span 2;
+  margin-top: 20px;
+  filter: drop-shadow(8px 8px 10px var(--darkest-color));
+}
+
+.description {
+  background-color: var(--light-color);
+  grid-column: span 2;
+  grid-row: span 1;
+  padding: 20px 40px;
+  width: auto;
+  margin: 60px auto auto;
+}
+
+.desc-title {
+  font-weight: 500;
+  color: black;
+  font-size: xx-large;
+  margin-top: auto;
+  margin-bottom: 0;
+  text-align: right;
+  padding: 5% 10%;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.title {
   font-size: 35px;
   font-weight: 500;
   color: var(--dark-color);
@@ -33,6 +83,7 @@
   grid-row: span 1;
   padding: 20px 40px;
   margin-left: auto;
+  margin-top: 30px;
   max-width: 80vw;
 }
 
@@ -44,19 +95,56 @@
   margin: auto;
 }
 
+.right {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.left {
+  text-align: left;
+}
+
 @media (max-width: 600px) {
   #content {
     grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
     grid-template-rows: 1fr 1fr;
   }
-  #title {
+  .description {
+    grid-column: span 1;
+    margin: auto;
+  }
+  .title {
     text-align: center;
     font-size: xx-large;
   }
   #circle-logo {
+    margin-top: 10px;
     padding-bottom:0;
   }
   #main-buttons {
     padding-top:0;
+  }
+  .grid-container{
+    grid-template-columns: 100%;
+    margin-bottom: 0;
+  }
+  .desc-title {
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    padding: 3%;
+  }
+  .image-intro {
+    width: 90%;
+    margin: 5%;
+    filter: drop-shadow(8px 8px 10px var(--darkest-color));
+  }
+  .desc-text {
+    font-size: large;
+    text-align: center;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 5%;
   }
 }

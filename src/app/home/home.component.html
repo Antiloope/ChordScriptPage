@@ -5,14 +5,36 @@
          alt="ChordScript logo">
   </div>
   <div id="main-buttons">
-    <h1 id="title">{{welcomeTitle}}</h1>
+    <h1 class="title">{{welcomeTitle}}</h1>
     <a mat-raised-button *ngFor="let item of mainButtons"
-       routerLink="{{item.route}}"
+       href="{{item.route}}"
        class="main-button">
       {{item.name}}
     </a>
   </div>
-  <div>
-    contentt
+  <div class="description">
+    <div class="grid-container">
+      <h1 class="desc-title" id="what-is">
+        {{description.title1}}
+      </h1>
+      <img class="image-intro" src="assets/pic1.png"
+      alt="Artistic image of the code">
+      <p class="desc-text">
+        {{description.text1}}
+      </p>
+    </div>
+  </div>
+  <div class="description">
+    <div class="grid-container">
+      <img src="assets/pic2.png"
+           alt="The sound analyzer screen"
+           class="image-intro right">
+      <h1 class="desc-title left">
+        {{description.title2}}
+      </h1>
+      <p class="desc-text left">
+        {{description.text2}}
+      </p>
+    </div>
   </div>
 </mat-sidenav-content>

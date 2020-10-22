@@ -1,1 +1,9 @@
-Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+<div class="footer">
+  <div class="footer-grid">
+    <a *ngFor="let l of links" class="footer-link"
+       routerLink="{{l.reference}}">
+      {{l.name}}
+    </a>
+  </div>
+  {{description}} <a style="color: var(--darkest-color);text-decoration: none;" href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a style="color: var(--darkest-color);text-decoration: none;" href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {lang} from '../global-contents';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  currentLanguage = Number(localStorage.getItem('lang'));
+
+  links = lang.footer_links[this.currentLanguage];
+
+  description = lang.footer_description[this.currentLanguage];
+
+  constructor() {}
 
   ngOnInit(): void {
   }
