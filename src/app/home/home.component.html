@@ -6,10 +6,15 @@
   </div>
   <div id="main-buttons">
     <h1 class="title">{{welcomeTitle}}</h1>
-    <a mat-raised-button *ngFor="let item of mainButtons"
-       href="{{item.route}}"
+    <a mat-raised-button
+       href="{{mainButtons[0].route}}"
        class="main-button">
-      {{item.name}}
+      {{mainButtons[0].name}}
+    </a>
+    <a mat-raised-button
+       routerLink="{{mainButtons[1].route}}"
+       class="main-button">
+      {{mainButtons[1].name}}
     </a>
   </div>
   <div class="description">
