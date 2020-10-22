@@ -11,6 +11,10 @@ export const lang = {
     ['Sorry! This page is not ready yet. Please go back to', 'home page'],
     ['¡Página en construcción!. Por favor vuelve a la', 'pagina principal']
   ],
+  docs_text: [
+    ['Sorry! This page is not ready yet. To see most recent documentation visit ', 'wiki documentation'],
+    ['¡Página en construcción!. Para ver la documentación mas actualizada visita la ', 'documentación en la wiki']
+  ],
   home_title_1: ['Music + Programming = CS', 'Music + Programming = CS'],
   home_text_1: [
     'ChordScript is a programming language for music programming and live coding. It allows you to create your own sounds and compose full songs!',

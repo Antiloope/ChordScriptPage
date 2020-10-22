@@ -5,7 +5,8 @@ import {lang} from './global-contents';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [],
 })
 export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;

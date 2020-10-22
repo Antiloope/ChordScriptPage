@@ -16,7 +16,7 @@ export class HomeComponent implements OnDestroy {
 
   mainButtons: any[] = [
     {name: lang.home_btn_what_is[this.currentLanguage], route: '#what-is'},
-    {name: lang.home_btn_get_started[this.currentLanguage], route: '#get-started'},
+    {name: lang.home_btn_get_started[this.currentLanguage], route: '/tutorial'},
   ];
 
   description = {
