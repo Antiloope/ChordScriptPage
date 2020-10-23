@@ -1,0 +1,83 @@
+@import '~@angular/material/theming';
+
+.title {
+  font-size: xx-large;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin: 30px auto 30px;
+  width: fit-content;
+  text-align: center;
+}
+
+.mobile-title {
+  display: none;
+  margin: auto;
+  padding-top: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.sections-titles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--darkest-color);
+  font-weight: 500;
+  border-radius: 5px 5px 0 0;
+  font-size: large;
+  padding-bottom: 10px;
+  background-color: var(--lightest-color);
+}
+
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 4%;
+  background-color: var(--primary-color);
+  border-radius: 0 0 5px 5px;
+}
+
+.section-column {
+  margin: 3%;
+}
+
+.mat-expansion-panel-header {
+  padding: 4% 24px;
+  text-align: center;
+}
+
+mat-panel-title {
+  font-weight: 500;
+  background-color: var(--lightest-color);
+  border-radius: 5px;
+  padding: 7px;
+  margin: auto;
+  height: fit-content;
+}
+
+mat-panel-description {
+  padding: 9px;
+}
+
+@media (max-width: 600px) {
+  .sections-container {
+    grid-template-columns: repeat(1, minmax(33%, auto));
+    border-radius: 5px 5px 5px 5px;
+  }
+  .mobile-title {
+    display: block;
+  }
+  .sections-titles {
+    display: none;
+  }
+}
+

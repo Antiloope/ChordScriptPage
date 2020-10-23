@@ -1,1 +1,88 @@
-<p>sections works!</p>
+<h1 class="title">{{sections.titles[0]}}</h1>
+<div class="sections-titles">
+  <div>{{sections.titles[1]}}</div>
+  <div>{{sections.titles[2]}}</div>
+  <div>{{sections.titles[3]}}</div>
+</div>
+<div class="sections-container">
+  <h1 class="mobile-title">{{sections.titles[1]}}</h1>
+  <mat-accordion class="section-column">
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.intro[0].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.intro[0].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+    </mat-expansion-panel>
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.intro[1].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.intro[1].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.intro[2].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.intro[2].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <h1 class="mobile-title">{{sections.titles[2]}}</h1>
+  <mat-accordion class="section-column">
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.core[0].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.core[0].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.core[1].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.core[1].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <h1 class="mobile-title">{{sections.titles[3]}}</h1>
+  <mat-accordion class="section-column">
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.expert[0].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.expert[0].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="section-row">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{sections.expert[1].title}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{sections.expert[1].description}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

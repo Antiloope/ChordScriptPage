@@ -139,4 +139,94 @@ export const lang = {
       ],
     }
   ],
+  tutorial_sections: [
+    {
+      titles: ['Tutorial sections', 'Introduction', 'Core', 'Expert'],
+      intro: [
+        {
+          title: 'About ChordScript',
+          description: 'Understanding what ChordScript is',
+          items: [],
+        },
+        {
+          title: 'Installation',
+          description: 'Installation process and how to use the maintenance tool',
+          items: [],
+        },
+        {
+          title: 'First sounds',
+          description: 'Creating your first sounds!',
+          items: [],
+        }
+      ],
+      core: [
+        {
+          title: 'Something',
+          description: 'Brief explanation',
+          items: [],
+        },
+        {
+          title: 'Something',
+          description: 'Brief explanation',
+          items: [],
+        }
+      ],
+      expert: [
+        {
+          title: 'Something',
+          description: 'Brief explanation',
+          items: [],
+        },
+        {
+          title: 'Something',
+          description: 'Brief explanation',
+          items: [],
+        }
+      ],
+    },
+    {
+      titles: ['Secciones del tutorial', 'Introducción', 'Nucleo', 'Experto'],
+      intro: [
+        {
+          title: 'Sobre ChordScript',
+          description: 'Entendiendo que es ChordScript',
+          items: [],
+        },
+        {
+          title: 'Instalación',
+          description: 'Proceso de instalación y uso de la herramienta de mantenimiento',
+          items: [],
+        },
+        {
+          title: 'Primeros sonidos',
+          description: 'Creando tus primeros sonidos!',
+          items: [],
+        }
+      ],
+      core: [
+        {
+          title: 'Algo',
+          description: 'Explicación',
+          items: [],
+        },
+        {
+          title: 'Algo',
+          description: 'Explicación',
+          items: [],
+        }
+      ],
+      expert: [
+        {
+          title: 'Algo',
+          description: 'Explicación',
+          items: [],
+        },
+        {
+          title: 'Algo',
+          description: 'Explicación',
+          items: [],
+        }
+      ],
+    }
+  ],
 };

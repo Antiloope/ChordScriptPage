@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {lang} from '../../global-contents';
 
 @Component({
   selector: 'app-sections',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sections.component.scss']
 })
 export class SectionsComponent implements OnInit {
+
+  currentLanguage = Number(localStorage.getItem('lang'));
+
+  sections = lang.tutorial_sections[this.currentLanguage];
 
   constructor() { }
 

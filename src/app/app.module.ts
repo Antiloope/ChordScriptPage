@@ -21,6 +21,7 @@ import {DocsComponent} from './docs/docs.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { SectionsComponent } from './tutorial/sections/sections.component';
 import { MainComponent } from './tutorial/main/main.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const routes: Routes = [
   { path: 'tutorial', component: TutorialComponent, children: [
@@ -78,6 +79,7 @@ const routes: Routes = [
     MatRippleModule,
     RouterModule.forRoot(routes),
     MatMenuModule,
+    MatExpansionModule,
   ],
   exports: [RouterModule],
   providers: [
