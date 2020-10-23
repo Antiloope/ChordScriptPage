@@ -1,0 +1,27 @@
+
+<h1 class="title">{{tuto.title}}</h1>
+<div class="tutorial-container">
+  <div class="card">
+    <p>{{tuto.cards[0].text1}}</p>
+    <p>{{tuto.cards[0].text2}}</p>
+    <p>{{tuto.cards[0].text3}}</p>
+  </div>
+  <div class="card">
+    <h2 style="margin: auto;width:fit-content;text-align:center;">
+      {{tuto.cards[1].title}}
+    </h2>
+    <a mat-raised-button class="tutorial-button"
+       href="{{tuto.cards[1].href}}">
+      {{tuto.cards[1].text}}
+    </a>
+  </div>
+  <div class="card">
+    <h2 style="margin: auto;width:fit-content;text-align:center;">
+      {{tuto.cards[2].title}}
+    </h2>
+    <a mat-raised-button class="tutorial-button"
+       href="{{tuto.cards[2].href}}">
+      {{tuto.cards[2].text}}
+    </a>
+  </div>
+</div>

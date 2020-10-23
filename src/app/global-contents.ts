@@ -108,12 +108,12 @@ export const lang = {
         },
         {
           title: 'Let\'s start the tutorial!',
-          href: '.',
+          href: '/tutorial',
           text: 'Go to the questions'
         },
         {
           title: 'If you want to go directly to a particular section',
-          href: '.',
+          href: '/tutorial/sections',
           text: 'All sections'
         }
       ],
@@ -128,12 +128,12 @@ export const lang = {
         },
         {
           title: 'Empecemos!',
-          href: '.',
+          href: '/tutorial',
           text: 'Ir a las preguntas'
         },
         {
           title: 'O si prefieres ir directamente a una sección en particular',
-          href: '.',
+          href: '/tutorial/sections',
           text: 'Todas las secciones'
         }
       ],

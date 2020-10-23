@@ -8,9 +8,6 @@ import {lang} from '../global-contents';
 })
 export class TutorialComponent implements OnInit {
 
-  currentLanguage = Number(localStorage.getItem('lang'));
-
-  tuto = lang.tutorial_main[this.currentLanguage];
 
   constructor() { }
 

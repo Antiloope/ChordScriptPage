@@ -19,9 +19,15 @@ import {ActivatedRouteSnapshot, RouterModule, RouterStateSnapshot, Routes} from 
 import {DownloadsComponent} from './downloads/downloads.component';
 import {DocsComponent} from './docs/docs.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { SectionsComponent } from './tutorial/sections/sections.component';
+import { MainComponent } from './tutorial/main/main.component';
 
 const routes: Routes = [
-  { path: 'tutorial', component: TutorialComponent },
+  { path: 'tutorial', component: TutorialComponent, children: [
+      {path: 'sections', component: SectionsComponent},
+      {path: '', component: MainComponent},
+    ]
+  },
   { path: 'about',
     component: HomeComponent,
     resolve: { url: 'externalUrlRedirectResolver' },
@@ -55,6 +61,8 @@ const routes: Routes = [
     TutorialComponent,
     DownloadsComponent,
     DocsComponent,
+    SectionsComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
