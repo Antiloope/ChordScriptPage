@@ -7,10 +7,6 @@ export const lang = {
   home_btn_what_is: ['What is ChordScript?', '¿Qué es ChordScript?'],
   home_btn_get_started: ['Get started', 'Primeros pasos'],
   home_welcome_title: ['Welcome to ChordScript page!', '¡Bienvenido a ChordScript!'],
-  work_in_progress: [
-    ['Sorry! This page is not ready yet. Please go back to', 'home page'],
-    ['¡Página en construcción!. Por favor vuelve a la', 'pagina principal']
-  ],
   docs_text: [
     ['Sorry! This page is not ready yet. To see most recent documentation visit ', 'wiki documentation'],
     ['¡Página en construcción!. Para ver la documentación mas actualizada visita la ', 'documentación en la wiki']
@@ -99,6 +95,48 @@ export const lang = {
         text: 'Código fuente',
         href: 'https://github.com/Antiloope/ChordScript/archive/v0.1.0-beta.zip'
       }
+    }
+  ],
+  tutorial_main: [
+    {
+      title: 'Welcome to ChordScript tutorial',
+      cards: [
+        {
+          text1: 'The tutorial starts with a series of questions in order to design the best customized learning experience for you.',
+          text2: 'With your answers, this page creates a recommended path to go over the tutorial sections. In this way, you will not have to repeat topics or access sections that are very advanced for your initial knowledge',
+          text3: 'Answering the questions, will not take you more than 3 minutes.'
+        },
+        {
+          title: 'Let\'s start the tutorial!',
+          href: '.',
+          text: 'Go to the questions'
+        },
+        {
+          title: 'If you want to go directly to a particular section',
+          href: '.',
+          text: 'All sections'
+        }
+      ],
+    },
+    {
+      title: 'Bienvenido al tutorial de ChordScript',
+      cards: [
+        {
+          text1: 'El tutorial consiste en una serie de preguntas que sirven para diseñar la mejor experiencia de aprendizaje personalizada para vos.',
+          text2: 'Con tus respuestas, la pagina crea un camino para recorrer las secciones del tutorial. De esta forma, no tendrás repetir temas ni acceder a secciones que son muy avanzadas para tu conocimiento inicial',
+          text3: 'Responder las preguntas no te llevará mas de 3 minutos.'
+        },
+        {
+          title: 'Empecemos!',
+          href: '.',
+          text: 'Ir a las preguntas'
+        },
+        {
+          title: 'O si prefieres ir directamente a una sección en particular',
+          href: '.',
+          text: 'Todas las secciones'
+        }
+      ],
     }
   ],
 };

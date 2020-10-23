@@ -10,7 +10,7 @@ export class TutorialComponent implements OnInit {
 
   currentLanguage = Number(localStorage.getItem('lang'));
 
-  workInProgress = lang.work_in_progress[this.currentLanguage];
+  tuto = lang.tutorial_main[this.currentLanguage];
 
   constructor() { }
 
