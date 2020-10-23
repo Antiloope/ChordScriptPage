@@ -43,4 +43,62 @@ export const lang = {
     'ChordScript code is licensed under GPL v3.0. Documentation under CC BY-NC-SA 4.0. Some icons designed by ',
     'El código de ChordScript está lisenciado con GPL v3.0. Documentación: CC BY-NC-SA 4.0. Algunos iconos diseñados por  '
   ],
+  downloads_windows: [
+    {
+      title: 'Download on Windows',
+      desc: 'Click the button to download the latest release of the installer for windows. ' +
+        'When you install the product, it also creates a maintenance tool that allows you to keep ChordScript always updated!',
+      button: {
+        text: 'Download',
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.1.0-beta/ChordScriptInstaller.exe'
+      }
+    },
+    {
+      title: 'Descarga para Windows',
+      desc: 'Haz click en el boton para descargar la utima version del instalador para windows. ' +
+        'Junto con el programa, se instala una herramienta de mantenimiento que te permite mantener ChordScript siempre actualizado!',
+      button: {
+        text: 'Descargar',
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.1.0-beta/ChordScriptInstaller.exe'
+      }
+    }
+  ],
+  downloads_other: [
+    {
+      title: 'Download on Linux / MacOS',
+      desc: 'There are not an official installer for Linux or Mac. We hope to get one soon. ' +
+        'Meanwhile, you can go to the guide for building from source code.',
+      button: {
+        text: 'Build instructions',
+        href: 'https://github.com/Antiloope/ChordScript#building'
+      }
+    },
+    {
+      title: 'Descarga para Linux / MacOS',
+      desc: 'Todavia no hay un instalador oficial para Linux ni MacOS, esperamos pronto tener uno. ' +
+        'Hasta entonces, puedes ir a la guia para compilación del codigo fuente',
+      button: {
+        text: 'Guia de compilación',
+        href: 'https://github.com/Antiloope/ChordScript#building'
+      }
+    }
+  ],
+  downloads_sources: [
+    {
+      title: 'Download source code',
+      desc: 'You can download the source code of ChordScript or go to the GitHub repo to get it from there',
+      button: {
+        text: 'Source code',
+        href: 'https://github.com/Antiloope/ChordScript/archive/v0.1.0-beta.zip'
+      }
+    },
+    {
+      title: 'Descarga el código fuente',
+      desc: 'Puedes descargar el código fuente de ChordScript o ir al repositorio de GitHub para descargarlo desde allí',
+      button: {
+        text: 'Código fuente',
+        href: 'https://github.com/Antiloope/ChordScript/archive/v0.1.0-beta.zip'
+      }
+    }
+  ],
 };

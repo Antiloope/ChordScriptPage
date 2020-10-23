@@ -10,7 +10,11 @@ export class DownloadsComponent implements OnInit {
 
   currentLanguage = Number(localStorage.getItem('lang'));
 
-  workInProgress = lang.work_in_progress[this.currentLanguage];
+  win = lang.downloads_windows[this.currentLanguage];
+
+  other = lang.downloads_other[this.currentLanguage];
+
+  sources = lang.downloads_sources[this.currentLanguage];
 
   constructor() { }
 

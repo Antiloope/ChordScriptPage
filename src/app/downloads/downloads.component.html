@@ -1,4 +1,37 @@
-<h1>{{workInProgress[0]}}
-  <a routerLink="/">{{workInProgress[1]}}</a>
-</h1>
+<div class="grid-container">
+  <h1 class="title">
+    {{win.title}}
+  </h1>
+  <a mat-raised-button class="download-button"
+       href="{{win.button.href}}">
+    {{win.button.text}}
+  </a>
+  <p class="text">
+    {{win.desc}}
+  </p>
+</div>
+<div class="grid-container">
+  <h1 class="title">
+    {{other.title}}
+  </h1>
+  <a mat-raised-button class="download-button"
+     href="{{other.button.href}}">
+    {{other.button.text}}
+  </a>
+  <p class="text">
+    {{other.desc}}
+  </p>
+</div>
+<div class="grid-container">
+  <h1 class="title">
+    {{sources.title}}
+  </h1>
+  <a mat-raised-button class="download-button"
+     href="{{sources.button.href}}">
+    {{sources.button.text}}
+  </a>
+  <p class="text">
+    {{sources.desc}}
+  </p>
+</div>
 
