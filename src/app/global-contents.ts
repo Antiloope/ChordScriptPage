@@ -46,7 +46,7 @@ export const lang = {
         'When you install the product, it also creates a maintenance tool that allows you to keep ChordScript always updated!',
       button: {
         text: 'Download',
-        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.1.0-beta/ChordScriptInstaller.exe'
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.0-beta/ChordScriptInstaller.exe'
       }
     },
     {
@@ -55,7 +55,7 @@ export const lang = {
         'Junto con el programa, se instala una herramienta de mantenimiento que te permite mantener ChordScript siempre actualizado!',
       button: {
         text: 'Descargar',
-        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.1.0-beta/ChordScriptInstaller.exe'
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.0-beta/ChordScriptInstaller.exe'
       }
     }
   ],
@@ -85,7 +85,7 @@ export const lang = {
       desc: 'You can download the source code of ChordScript or go to the GitHub repo to get it from there',
       button: {
         text: 'Source code',
-        href: 'https://github.com/Antiloope/ChordScript/archive/v0.1.0-beta.zip'
+        href: 'https://github.com/Antiloope/ChordScript/archive/v0.2.0-beta.zip'
       }
     },
     {
@@ -93,7 +93,7 @@ export const lang = {
       desc: 'Puedes descargar el código fuente de ChordScript o ir al repositorio de GitHub para descargarlo desde allí',
       button: {
         text: 'Código fuente',
-        href: 'https://github.com/Antiloope/ChordScript/archive/v0.1.0-beta.zip'
+        href: 'https://github.com/Antiloope/ChordScript/archive/v0.2.0-beta.zip'
       }
     }
   ],
