@@ -8,8 +8,14 @@ export const lang = {
   home_btn_get_started: ['Get started', 'Primeros pasos'],
   home_welcome_title: ['Welcome to ChordScript page!', '¡Bienvenido a ChordScript!'],
   docs_text: [
-    ['Sorry! This page is not ready yet. To see most recent documentation visit ', 'wiki documentation'],
-    ['¡Página en construcción!. Para ver la documentación mas actualizada visita la ', 'documentación en la wiki']
+      {
+        text: 'To see most recent documentation visit the wiki',
+        go: 'Wiki documentation'
+      },
+      {
+        text: 'Para ver la documentación mas actualizada visita la wiki',
+        go: 'Documentación'
+      }
   ],
   home_title_1: ['Music + Programming = CS', 'Music + Programming = CS'],
   home_text_1: [
@@ -46,7 +52,7 @@ export const lang = {
         'When you install the product, it also creates a maintenance tool that allows you to keep ChordScript always updated!',
       button: {
         text: 'Download',
-        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.0-beta/ChordScriptInstaller.exe'
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.3-beta/ChordScriptInstaller.exe'
       }
     },
     {
@@ -55,7 +61,7 @@ export const lang = {
         'Junto con el programa, se instala una herramienta de mantenimiento que te permite mantener ChordScript siempre actualizado!',
       button: {
         text: 'Descargar',
-        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.0-beta/ChordScriptInstaller.exe'
+        href: 'https://github.com/Antiloope/ChordScript/releases/download/v0.2.3-beta/ChordScriptInstaller.exe'
       }
     }
   ],
@@ -99,6 +105,7 @@ export const lang = {
   ],
   tutorial_main: [
     {
+      inProgress: 'Work in progress!',
       title: 'Welcome to ChordScript tutorial',
       cards: [
         {
@@ -119,6 +126,7 @@ export const lang = {
       ],
     },
     {
+      inProgress: '¡Página en obra!',
       title: 'Bienvenido al tutorial de ChordScript',
       cards: [
         {
@@ -127,7 +135,7 @@ export const lang = {
           text3: 'Responder las preguntas no te llevará mas de 3 minutos.'
         },
         {
-          title: 'Empecemos!',
+          title: '¡Empecemos!',
           href: '/tutorial',
           text: 'Ir a las preguntas'
         },

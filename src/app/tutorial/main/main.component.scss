@@ -29,6 +29,14 @@
   color: var(--lightest-color);
 }
 
+.work-in-progress{
+  font-size: xx-large;
+  width: fit-content;
+  margin: 5px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #d08181;
+}
 
 ::ng-deep{
   .mat-button-wrapper {

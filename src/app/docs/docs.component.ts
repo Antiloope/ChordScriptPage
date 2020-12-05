@@ -10,7 +10,7 @@ export class DocsComponent implements OnInit {
 
   currentLanguage = Number(localStorage.getItem('lang'));
 
-  text = lang.docs_text[this.currentLanguage];
+  docs = lang.docs_text[this.currentLanguage];
 
   constructor() { }
 

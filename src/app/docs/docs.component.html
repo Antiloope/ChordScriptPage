@@ -1,3 +1,9 @@
-<h1>{{text[0]}}
-  <a style="color: var(--darkest-color); text-decoration: none" routerLink="/externalDoc">{{text[1]}}</a>
-</h1>
+<div class="grid-container">
+  <p class="title">
+    {{docs.text}}
+  </p>
+  <a mat-raised-button class="docs-button"
+     routerLink="/externalDoc">
+    {{docs.go}}
+  </a>
+</div>
